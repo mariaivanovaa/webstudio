@@ -26,10 +26,22 @@ letter-spacing: 0.02em;
     text-decoration: none;
     color:#212121
 }
-.nav-list a:hower{color:#2196F3}
+.nav-list a:hover{color:#2196F3}
+
+.contact-list a{
+list-style-type: none;
+text-decoration: none;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #757575;
+}
+.contact-list a:hover{color: #2196F3;}
 
 .contact-list{list-style-type: none;}
-
 .hero-title{font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
