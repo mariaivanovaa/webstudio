@@ -144,3 +144,7 @@ color: #757575;
     top: 2094px;
     
     background: #2F303A;}
+
+    .link{text-decoration: none;}
+    .tel{text-decoration: none;}
+    .bg-list{list-style-type: none;}
