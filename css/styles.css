@@ -211,11 +211,53 @@ color: #212121;
     justify-content:space-between;
     margin: 50px auto 0;
     width: 1200px;
+    position: relative;
+}
+
+.thumb {
+    width: 370px;
+    height: 294px;
+    
+}
+
+.thumb:nth-child(n)::after {
+    content: "Десктопні додатки";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.80);
+
+    color: #FFF;
+text-align: center;
+font-family: Roboto, sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+
+position: absolute;
+bottom: 0;
+/* left: 0; */
+}
+
+.thumb:nth-child(2)::after {
+    content: "Мобільні додатки";
+}
+
+.thumb:nth-child(3)::after {
+    content: "Дизайнерські рішення";
 }
 
 .list-item-img{
-    width: 370px;
-height: 294px;
+   width: 100%;
+   object-fit: contain;
+   object-position: center;
+  
 }
 
 /* team */
@@ -251,10 +293,17 @@ border-radius: 0px 0px 4px 4px;
 padding-bottom: 30px;
 }
 
-.team-list-img{
+.thumb-team {
     width: 270px;
 height: 260px;
-margin-bottom: 30px;
+}
+
+.team-list-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 30px;
 }
 
 .list-title{
