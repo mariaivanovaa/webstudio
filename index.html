@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web studio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link
@@ -46,7 +48,7 @@
         </header>
         <main>
             <section class="hero">
-                <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
+                <h1 class="hero-title animate__fadeIn animate__animated" >Ефективні рішення для <br> вашого бізнесу</h1>
                 <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
             </section>
 
@@ -76,7 +78,7 @@
                 </ul>
             </section>
 
-            <section class="work">
+            <section class="work" data-aos="fade-down" data-aos-duration="2000" data-aos-easing="linear">
                 <h2 class="title">Чим ми займаємося</h2>
                 <ul class="hero-list">
                     <li class="thumb">
@@ -93,7 +95,7 @@
 
            
                 <section class="team">
-                    <h2 class="team-title">Наша команда</h2>
+                    <h2 class="team-title animate__flipInX animate__animated">Наша команда</h2>
                     <ul class="team-list">
                        
                             <li class="team-list-item">
@@ -441,8 +443,11 @@
         </form>
     </div>
 
-
-
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="./js/modal.js"></script>
 </body>
 
